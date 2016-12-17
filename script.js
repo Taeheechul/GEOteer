@@ -9,6 +9,11 @@ $( document ).ready(function() {
     $(".form").show();
     }); 
     
+     
+    $("#submit").on("click", function(){
+    $(".environment , .animals , .education , .form").hide();
+    }); 
+    
     $(".round-button1").on("click", function(){
     $(".environment").show();
       var defaultLocation = { lat: 40.7566846 , lng: -73.9918376};
@@ -45,6 +50,11 @@ $( document ).ready(function() {
     
     $(".close").on("click", function(){
     $(".environment , .animals , .education").hide();
+    }); 
+    
+     
+    $(".close2").on("click", function(){
+    $(".form").hide();
     }); 
     var labels = 'ABCDE';
       var labelIndex = 0;

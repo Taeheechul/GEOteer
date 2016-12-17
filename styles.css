@@ -207,12 +207,17 @@ body{
 .form{
     text-align: center;
     background-image:url("http://www.nyc.gov/html/law/images/misc/slides/slide1.jpg");
+
     font-size:20px;
     color: white;
     border:5px solid white;
-      border-radius: 20%
-      background-image: no-repeat;
+      border-radius: 20%;
 }
+
+.form input{
+    color: black;
+}
+
 
 .environmentlist {
     position: absolute;
