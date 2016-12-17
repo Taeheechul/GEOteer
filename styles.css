@@ -188,9 +188,11 @@ body{
 
 .close{
     color: black;
+    z-index: 10;
 }
 
 .form{
+    position:absolute;
     top:0;
     bottom:0;
     left:0;
@@ -204,29 +206,32 @@ body{
 
 .form{
     text-align: center;
-    background-image: url("http://www.mvcs.org/filerequest/6698");
-    
-
-    
+    background-image:url("http://www.nyc.gov/html/law/images/misc/slides/slide1.jpg");
+    font-size:20px;
+    color: white;
+    border:5px solid white;
+      border-radius: 20%
+      background-image: no-repeat;
 }
 
 .environmentlist {
     position: absolute;
+    top: 20px;
+    right: 0;
     width: 40%;
-    height: 100%;
-    border: 1px solid black;
 }
 .message{
     font-size:2vw;
 }
-.enviromentmap {
+#environmentmap {
         height: 100%;
         width: 60%;
       }
      
      
-div {
-    background:("http://nycparkingauthority.com/wp-content/uploads/2014/05/nyc-monthly-parking.jpg");
-    background-size: 650px 170px;
-    background-repeat: no-repeat;
+
+   
+
+#submit{
+    color: black;
 }
