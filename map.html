@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Marker Labels</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+      
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCciowJx6MqIIxeheK1dFQvnNaQb8w9Hos"></script>
+    <script>
+      // In the following example, markers appear when the user clicks on the map.
+      // Each marker is labeled with a single alphabetical character.
+      var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      var labelIndex = 0;
+
+      function initialize() {
+        var defaultLocation = { lat: 40.7566846 , lng: -73.9918376};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: defaultLocation
+        });
+
+        // This event listener calls addMarker() when the map is clicked.
+   
+        // Add a marker at the center of the map.
+        var category=[];
+        category["enviroment"]=[{lat: 40.6725757 , lng: -74.0109782},
+                                {lat:40.7191847, lng:-73.9738762},
+                                {lat:40.8911232,lng:-73.8961311},
+                                {lat:40.8790776,lng:-74.1067679},
+                                {lat:40.7481253,lng:-73.9960727}];
+                                
+         category["animals"]= [{lat:40.7799751, lng:-73.9577292},
+                               {lat:40.7131643, lng:-74.0103963},
+                               {lat:40.7446214, lng:-73.9898933},
+                               {lat:40.7161765, lng:-73.9659334},
+                               {lat:40.7274667, lng:-73.9857719}];
+                               
+         category["education"]= [{lat:40.8018867, lng:-73.9301036},
+                               {lat:40.7498389, lng:-73.980394},
+                               {lat:40.8087895, lng:-73.9511829},
+                               {lat:40.7281012, lng:-73.9886719},
+                               {lat:40.7725239, lng:-73.9825744}];                     
+        addDefaultMarker(defaultLocation, map);
+        
+        
+        for(var i=0;i<category["enviroment"].length;i++){
+         addMarker(category["enviroment"][i], map);
+        }
+        
+        for(var i=0;i<category["animals"].length;i++){
+         addMarker(category["animals"][i], map);
+        }
+        for(var i=0;i<category["education"].length;i++){
+         addMarker(category["education"][i], map);
+        }
+      }
+
+      // Adds a marker to the map.
+    function addDefaultMarker (location, map) {
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
+       });
+    }
+      function addMarker(location, map) {
+        // Add the marker at the clicked location, and add the next-available label
+        // from the array of alphabetical characters.
+        var marker = new google.maps.Marker({
+          position: location,
+          label: labels[labelIndex++ % labels.length],
+          map: map
+        });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+</html>

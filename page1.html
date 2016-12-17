@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCciowJx6MqIIxeheK1dFQvnNaQb8w9Hos"></script>
+    <script type="text/javascript" src="script.js"></script>
+   
+    <meta charset="UTF-8">
+    <title>GEOteer</title>
+</head>
+<body>
+    <img src= "logo.jpg" id="logo">
+    
+      <div class="description">
+        <p class="message"> We're a platform where prospective users have easy access to updates on community volunteer opportunities.
+Get connected to your passions and events in New York City!
+<br>Click on a Category to get started!</br>
+</p>
+    </div>
+    
+    
+    <div class="buttons">
+    <div class="round-button1"><div class="round-button-circle1"><a class="round-button1">Environment</a></div></div>
+    <div class="round-button2"><div class="round-button-circle2"><a class="round-button2">Animals</a></div></div>
+    <div class="round-button3"><div class="round-button-circle3"><a class="round-button3">Education</a></div></div>
+    </div>
+    
+    
+    
+    <div class="environment">
+        <button class="close">X</button>
+        <div class="environmentlist">
+             <ul>
+                 <li> A) Red Hook Volunteer center</li>
+             </ul>
+        </div>
+        <div class="enviromentmap" ></div>
+    </div>
+
+    
+    <div class="animals">
+        <button class="close">X</button>
+        this will hold the map for animals
+    </div>
+    
+    
+    <div class="education">
+        <button class="close">X</button>
+        this will hold the map education
+    </div>
+    
+  
+    
+    <div class="form">
+        <form action="action_page.php">
+                
+      Name:<br>
+      <input type="text" name="firstname" value="">
+      <br>
+      Email:<br>
+      <input type="text" name="lastname" value="" style= "width: 350px;">
+      <br>Time(Start to Finish):<br>
+      <input type="text" name="time" value="">
+      <br>
+      <input type="submit" value="Submit" id="submit">
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,232 @@
+body{
+    background-image: url("https://newevolutiondesigns.com/images/freebies/city-wallpaper-47.jpg");
+}
+.buttons{
+    text-align: center;
+}
+.round-button1 {
+	width:25%;
+}
+.round-button-circle1 {
+	width: 100%;
+	height:0;
+	padding-bottom: 100%;
+    border-radius: 50%;
+	border:10px solid #32CD32;
+    overflow:hidden;
+    
+    background-image: url("http://eskipaper.com/images/leaves-background-8.jpg"); 
+    box-shadow: 0 0 3px gray;
+    background-position: right bottom;
+    background-size: cover
+}
+.round-button-circle1:hover {
+	background:green;
+}
+.round-button1{
+    display:inline-block;
+}
+.round-button1 a {
+    display: block;
+	width:100%;
+	padding-top:50%;
+    padding-bottom:50%;
+	line-height:1em;
+	margin-top:-0.5em;
+    
+	text-align:center;
+	color:white;
+    font-family:Verdana;
+    font-size:2vw;
+    font-weight:bold;
+    text-decoration:none;
+}
+.round-button-circle2{
+  width:350px;
+	height:150px;
+	padding-bottom: 100%;
+    border-radius: 90%;
+	border:10px solid #f4a460;
+    overflow:hidden;
+    
+    background: #4679BD; 
+    box-shadow: 0 0 3px gray;
+    background:url("leaves.jpg");
+    background-repeat:no-repeat;
+	width:100%;
+
+
+
+}
+.round-button-circle2:hover {
+	background:#ffb347;
+}
+.round-button2{
+    display:inline-block;
+}
+.round-button2 a {
+    display:block;
+	width:100%;
+	padding-top:50%;
+    padding-bottom:50%;
+	line-height:1em;
+	margin-top:-0.5em;
+    
+	text-align:center;
+	color:black;
+    font-family:Verdana;
+    font-size:2vw;
+    font-weight:bold;
+    text-decoration:none;
+}
+.round-button2 {
+	width:25%;
+}
+.round-button-circle2 {
+	width: 100%;
+	height:0;
+	padding-bottom: 100%;
+    border-radius: 50%;
+	border:10px solid #f4a460;
+    overflow:hidden;
+    
+    background-image: url("https://newevolutiondesigns.com/images/freebies/animals-background-preview-27.jpg"); 
+    box-shadow: 0 0 3px gray;
+    background-position: right bottom;
+    background-size: cover
+}
+.round-button-circle2:hover {
+	background:#654321;
+}
+.round-button1{
+    display:inline-block;
+}
+.round-button2 a {
+    display: block;
+	width:100%;
+	padding-top:50%;
+    padding-bottom:50%;
+	line-height:1em;
+	margin-top:-0.5em;
+    
+	text-align:center;
+	color:white;
+    font-family:Verdana;
+    font-size:2.5vw;
+    font-weight:bold;
+    text-decoration:none;
+}
+.round-button3 {
+	width:25%;
+}
+.round-button-circle3 {
+	width: 100%;
+	height:0;
+	padding-bottom: 100%;
+    border-radius: 50%;
+	border:10px solid red;
+    overflow:hidden;
+    
+    background-image: url("http://jeremycorbyn.org.uk/data/2015/02/Schools-Education-apple.jpg"); 
+    box-shadow: 0 0 3px gray;
+    background-position: left bottom;
+    background-size: cover
+}
+.round-button-circle3:hover {
+	background:#5e2129;
+}
+.round-button3{
+    display:inline-block;
+}
+.round-button3 a {
+    display: block;
+	width:100%;
+	padding-top:50%;
+    padding-bottom:50%;
+	line-height:1em;
+	margin-top:-0.5em;
+    
+	text-align:center;
+	color:white;
+    font-family:Verdana;
+    font-size:2.5vw;
+    font-weight:bold;
+    text-decoration:none;
+    
+    
+}
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    mix-blend-mode: multiply;
+ 
+}
+
+.environment,.animals,.education{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    width:95%;
+    height:95%;
+    background-color: white;
+    
+}
+
+.description{
+    
+    text-align:center;
+	color:black;
+    font-family:Times;
+    font-size:2.5vw;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.close{
+    color: black;
+}
+
+.form{
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    width:50%;
+    height:90%;
+    background-color: white;
+}
+
+
+.form{
+    text-align: center;
+    background-image: url("http://www.mvcs.org/filerequest/6698");
+    
+
+    
+}
+
+.environmentlist {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    border: 1px solid black;
+}
+.message{
+    font-size:2vw;
+}
+.enviromentmap {
+        height: 100%;
+        width: 60%;
+      }
+     
+     
+div {
+    background:("http://nycparkingauthority.com/wp-content/uploads/2014/05/nyc-monthly-parking.jpg");
+    background-size: 650px 170px;
+    background-repeat: no-repeat;
+}
